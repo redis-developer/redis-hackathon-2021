@@ -6,6 +6,7 @@
     "type": "Full App", //Can be "Building Block" or "Full App"
     "contributed_by": "Community", // Can be "Redis Labs" or "Community" or "Partner"
     "repo_url": "https://github.com/rbaxter1/redis-hackathon-2021", //This is the Gitub Repo's URL.
+    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/redis-hackathon-2021/master/images/app_preview_image.png",
     "download_url": "https://github.com/rbaxter1/redis-hackathon-2021/archive/refs/heads/master.zip",
     "hosted_url": "", //The URL of the app. if you are hosting this app somewhere
     "quick_deploy": "false", //"true" if the project has Heroku, Vercel, Google deploy buttons

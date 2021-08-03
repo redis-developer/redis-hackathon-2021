@@ -1,35 +1,35 @@
 {
-    "app_name": "The Network",  //Name of the app
-    "description": "Create networks for buying and selling goods", // One line description
-    "hidden": true, // Can be "true" or "false". If true, this app won't show up in Marketplace.
-    "rank": 2021, // This is used to sort the apps in the marketplace. 1 to 20 are reserved. Enter greater than 20
-    "type": "Full App", //Can be "Building Block" or "Full App"
-    "contributed_by": "Community", // Can be "Redis Labs" or "Community" or "Partner"
-    "repo_url": "https://github.com/rbaxter1/redis-hackathon-2021", //This is the Gitub Repo's URL.
+    "app_name": "The Network",  
+    "description": "Create networks for buying and selling goods", 
+    "hidden": true, 
+    "rank": 2021, 
+    "type": "Full App", 
+    "contributed_by": "Community", 
+    "repo_url": "https://github.com/redis-developer/redis-hackathon-2021", 
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/redis-hackathon-2021/master/images/app_preview_image.png",
-    "download_url": "https://github.com/rbaxter1/redis-hackathon-2021/archive/refs/heads/master.zip",
-    "hosted_url": "", //The URL of the app. if you are hosting this app somewhere
-    "quick_deploy": "false", //"true" if the project has Heroku, Vercel, Google deploy buttons
+    "download_url": "https://github.com/redis-developer/redis-hackathon-2021/archive/refs/heads/master.zip",
+    "hosted_url": "", 
+    "quick_deploy": "false", 
     "deploy_buttons": [
         {
-            "heroku": "" //Deploy button URL for deploying on Heroku
+            "heroku": "" 
         },
         {
-            "vercel": "" //Deploy button URL for deploying on Vercel
+            "vercel": "" 
         },
         {
-            "Google": "" //Deploy button URL for deploying on Google cloud.
+            "Google": "" 
         }
     ],
-    "language": ["JavaScript", "Python", "React Native"], // Backend technologies: "JavaScript", "Java", "Python", "Go", "C#", "Ruby", "PHP", etc. 
-    "redis_commands": [""], // Enter all the Redis commands
-    "redis_features": [""],// Enter any core Redis feature or leave it blank.
-    "redis_modules": ["RedisGraph"], //Value can be one or more of "RediJSON", "RediSearch", "RedisTimeseries", "RedisAI"  "RedisGears" or "RedisGraph" listed in an array. 
+    "language": ["JavaScript", "Python", "React Native"], 
+    "redis_commands": [""], 
+    "redis_features": [""],
+    "redis_modules": ["RedisGraph"], 
     "app_image_urls": [
         ""
-    ], // Provide any image urls in an array.
-    "youtube_url": "", //Provide a Youtube link to your app's video
-    "special_tags": [], // "Hackathon", "Paid", or any event names.
-    "verticals": ["Retail"], // Can be: "Healthcare", "Financial", "Tourism", "Retail", "Oil & Gas", "Manufacturing", "Technology","Education", "Construction"  
-    "markdown": "https://github.com/rbaxter1/redis-hackathon-2021/blob/master/readme.md", // Link to the RAW Markdown.
+    ], 
+    "youtube_url": "", 
+    "special_tags": [], 
+    "verticals": ["Retail"], 
+    "markdown": "https://raw.githubusercontent.com/redis-developer/redis-hackathon-2021/master/readme.md", 
 }

@@ -217,7 +217,7 @@ Run the mobile application using Expo in a local web browser. This application c
 	
 After running `expo start`, you are presented with the following options:
 
-![](./images/expo_start.png)
+![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/expo_start.png)
 
  In the command window, type `w` to open the mobile application in your default web browser.
 
@@ -242,12 +242,12 @@ The `docker compose up` command you ran above starts a RedisInsight server. To u
 
 After accepting the EULA agreement, click the "I already have a database" button. Then "Connect to a Redis Database". In the host field enter `redis`. The port is 6379. Enter anything you like for the name. Click "Add Redis Database"
 
-![](./images/redisinsight_add_db.png)
+![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/redisinsight_add_db.png)
 ## Architecture
 
 The following diagram illustrates the architecture.
 
-![](./images/architecture.png) 
+![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/architecture.png) 
 
 ## Technology Stack
 
@@ -272,8 +272,8 @@ The following diagram illustrates the architecture.
 
 | | | |
 --- | --- | ---
-|![](./images/redis_enterprise_logo.png) |![](./images/redis_graph_logo.png) | ![](./images/docker_logo.png) |
-|![](./images/reactnative_logo.png) | ![](./images/envoy_logo.png) | ![](./images/grpc_logo.png) |
+|![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/redis_enterprise_logo.png) |![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/redis_graph_logo.png) | ![](./images/docker_logo.png) |
+|![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/reactnative_logo.png) | ![](./images/envoy_logo.png) | ![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/grpc_logo.png) |
 
 
 ## Developer Notes

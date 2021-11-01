@@ -10,16 +10,14 @@
     "quick_deploy": "false", 
     "deploy_buttons": [
         {
-            "heroku": "" 
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/the-network.git" 
         },
         {
-            "vercel": "" 
-        },
-        {
-            "Google": "" 
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/the-network.git" 
         }
+   
     ],
-    "language": ["JavaScript", "Python", "React Native"], 
+    "language": ["JavaScript", "Python", "React"], 
     "redis_commands": [""], 
     "redis_features": [""],
     "redis_modules": ["RedisGraph"], 

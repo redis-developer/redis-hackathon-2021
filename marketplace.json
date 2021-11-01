@@ -1,10 +1,9 @@
 {
     "app_name": "The Network",  
     "description": "Create networks for buying and selling goods", 
-    "rank": "423", 
     "type": "Full App", 
     "contributed_by": "Community", 
-    "repo_url": "https://github.com/redis-developer/redis-hackathon-2021", 
+    "repo_url": "https://github.com/redis-developer/the-network", 
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/the-network/master/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/the-network/archive/refs/heads/master.zip",
     "hosted_url": "", 
@@ -24,9 +23,7 @@
     "redis_commands": [""], 
     "redis_features": [""],
     "redis_modules": ["RedisGraph"], 
-    "app_image_urls": [
-        ""
-    ], 
+    "app_image_urls": [], 
     "youtube_url": "", 
     "special_tags": [], 
     "verticals": ["Retail"], 

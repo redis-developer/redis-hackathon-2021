@@ -3,17 +3,17 @@
     "description": "Create networks for buying and selling goods", 
     "type": "Full App", 
     "contributed_by": "Community", 
-    "repo_url": "https://github.com/redis-developer/the-network", 
-    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/the-network/master/images/app_preview_image.png",
-    "download_url": "https://github.com/redis-developer/the-network/archive/refs/heads/master.zip",
+    "repo_url": "https://github.com/redis-developer/thenetwork", 
+    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/app_preview_image.png",
+    "download_url": "https://github.com/redis-developer/thenetwork/archive/refs/heads/master.zip",
     "hosted_url": "", 
     "quick_deploy": "false", 
     "deploy_buttons": [
         {
-            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/the-network.git" 
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/thenetwork.git" 
         },
         {
-            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/the-network.git" 
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/thenetwork.git" 
         }
    
     ],
@@ -25,5 +25,5 @@
     "youtube_url": "", 
     "special_tags": [], 
     "verticals": ["Retail"], 
-    "markdown": "https://raw.githubusercontent.com/redis-developer/the-network/master/readme.md", 
+    "markdown": "https://raw.githubusercontent.com/redis-developer/thenetwork/master/readme.md", 
 }

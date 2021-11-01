@@ -5,8 +5,8 @@
     "type": "Full App", 
     "contributed_by": "Community", 
     "repo_url": "https://github.com/redis-developer/redis-hackathon-2021", 
-    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/redis-hackathon-2021/master/images/app_preview_image.png",
-    "download_url": "https://github.com/redis-developer/redis-hackathon-2021/archive/refs/heads/master.zip",
+    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/the-network/master/images/app_preview_image.png",
+    "download_url": "https://github.com/redis-developer/the-network/archive/refs/heads/master.zip",
     "hosted_url": "", 
     "quick_deploy": "false", 
     "deploy_buttons": [
@@ -30,5 +30,5 @@
     "youtube_url": "", 
     "special_tags": [], 
     "verticals": ["Retail"], 
-    "markdown": "https://raw.githubusercontent.com/redis-developer/redis-hackathon-2021/master/readme.md", 
+    "markdown": "https://raw.githubusercontent.com/redis-developer/the-network/master/readme.md", 
 }

@@ -199,9 +199,9 @@ After installing Node, install Expo:
 
 Get the repo:
 
-    git clone https://github.com/rbaxter1/redis-hackathon-2021.git
+    git clone https://github.com/redis-developer/the-network
 
-    cd redis-hackathon-2021
+    cd the-network
 
 Build and start the containers for Redis, RedisInsight, the backend Python gRPC server, and the Envoy proxy:
 

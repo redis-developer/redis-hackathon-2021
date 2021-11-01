@@ -1,6 +1,6 @@
 # The Network
 
-![](https://raw.githubusercontent.com/redis-developer/thenetwork/images/the_network_logo.png)
+![](https://raw.githubusercontent.com/redis-developer/the-network/master/images/the_network_logo.png)
 
 
 

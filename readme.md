@@ -1,18 +1,8 @@
 # The Network
 
-![](./images/the_network_logo.png)
-## A 2021 Redis Hackathon Project
+![](https://raw.githubusercontent.com/redis-developer/thenetwork/images/the_network_logo.png)
 
-## Team:
 
-<ul>
-  <li> Rob Baxter </li>
-  <li> Slattery Donohoe </li>
-  <li> Jonas McGowan-Martin </li>
-  <li> Jon Myers </li>
-</ul>
-
-## What is *The Network*?
 
 *The Network* is a technology platform that enables you to build your own personal buying and selling network. When you meet people you want transact with, tell them to "join my network". Whether you are an artist building a distribution network for your creations, or a group of sports fans coordinating ticket sales, *The Network* is a space that makes building networks and transacting easy.
 

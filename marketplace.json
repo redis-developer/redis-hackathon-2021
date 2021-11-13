@@ -22,7 +22,7 @@
     "redis_features": [""],
     "redis_modules": ["RedisGraph"], 
     "app_image_urls": [], 
-    "youtube_url": "", 
+    "youtube_url": "https://www.youtube.com/watch?v=zwZUyvwun-Y", 
     "special_tags": [], 
     "verticals": ["Retail"], 
     "markdown": "https://raw.githubusercontent.com/redis-developer/thenetwork/master/readme.md" 

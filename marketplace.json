@@ -1,29 +1,29 @@
 {
-    "app_name": "The Network",  
-    "description": "Create networks for buying and selling goods", 
-    "type": "Full App", 
-    "contributed_by": "Community", 
-    "repo_url": "https://github.com/redis-developer/thenetwork", 
+    "app_name": "The Network",
+    "description": "Create networks for buying and selling goods",
+    "type": "Full App",
+    "contributed_by": "Community",
+    "repo_url": "https://github.com/redis-developer/thenetwork",
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/thenetwork/archive/refs/heads/master.zip",
-    "hosted_url": "", 
-    "quick_deploy": "false", 
+    "hosted_url": "",
+    "quick_deploy": "false",
     "deploy_buttons": [
         {
-            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/thenetwork.git" 
+            "heroku": "https://heroku.com/deploy?template=https://github.com/redis-developer/thenetwork.git"
         },
         {
-            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/thenetwork.git" 
+            "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/thenetwork.git"
         }
-   
+
     ],
-    "language": ["JavaScript", "Python", "React"], 
-    "redis_commands": [""], 
-    "redis_features": [""],
-    "redis_modules": ["RedisGraph"], 
-    "app_image_urls": [], 
-    "youtube_url": "https://www.youtube.com/watch?v=zwZUyvwun-Y", 
-    "special_tags": [], 
-    "verticals": ["Retail"], 
-    "markdown": "https://raw.githubusercontent.com/redis-developer/thenetwork/master/readme.md" 
+    "language": ["JavaScript", "Python", "React"],
+    "redis_commands": [""],
+    "redis_use_cases": [""],
+    "redis_features": ["Graph"],
+    "app_image_urls": [],
+    "youtube_url": "https://www.youtube.com/watch?v=zwZUyvwun-Y",
+    "special_tags": [],
+    "verticals": ["Retail"],
+    "markdown": "https://raw.githubusercontent.com/redis-developer/thenetwork/master/readme.md"
 }

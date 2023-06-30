@@ -8,7 +8,7 @@
 
 ## Use of Redis
 
-This project uses RedisGraph to store and retrieve data. In the setup described below, Redis runs in a [redismod](https://github.com/RedisLabsModules/redismod) Docker container.
+This project uses Redis Graph to store and retrieve data. In the setup described below, Redis runs in a [redismod](https://github.com/RedisLabsModules/redismod) Docker container.
 
 ## How the data is stored
 
@@ -24,7 +24,7 @@ All data for *The Network* is stored in a graph. **Users**, **Networks**, and **
 |Node 1 |Node 2| Edges |
 --- | --- | ---
 |User |User | Friend|
-|User | Item | Listing, Offer | 
+|User | Item | Listing, Offer |
 |User | Network | Member |
 |Item | Tags | Label |
 
@@ -42,13 +42,13 @@ When a person signs up for *The Network*, a **user** node is created. Properties
     ON CREATE SET u.first_name='Elon', u.last_name='Musk'
     RETURN not(exists(check))"
 
-The merge is used to make sure no duplicate users are created for a given email address. The optional match returns to the service whether this user did not already exist, and the user was truly "created." 
+The merge is used to make sure no duplicate users are created for a given email address. The optional match returns to the service whether this user did not already exist, and the user was truly "created."
 
 ### Creating Networks
 
 When a user creates a network, a **network** node is created, and both an **owner** and a **member** edge is created between the **user** and the **network** nodes.
 
-    GRAPH.QUERY THE_NETWORK_GRAPH 
+    GRAPH.QUERY THE_NETWORK_GRAPH
     "MATCH (u:user {email:'emusk@tesla.com'})
     MERGE (n:network {name: 'Spaceship parts exchange', description: 'Buy and sell lightly used space travel tech'})
     MERGE (u)-[:OWNER]->(n)
@@ -56,14 +56,14 @@ When a user creates a network, a **network** node is created, and both an **owne
     SET n.image_id = 'image:3261'"
 
 The image associated with the network is stored in its own key. In the graph, the key is stored as a property on the network.
-    
+
     SET image:3261 <b64_encoded_image_data>
 
 ### Joining Networks
 
 When a user joins a network, a **member** edge is created between the **user** and **network** nodes.
 
-    GRAPH.QUERY THE_NETWORK_GRAPH 
+    GRAPH.QUERY THE_NETWORK_GRAPH
     "MATCH (u:user {email:'emusk@tesla.com'})
     MATCH (n:network {name:'Tesla apparel'})
     MERGE (u)-[:MEMBER]->(n)"
@@ -114,7 +114,7 @@ The *Items* screen shows all items for sale in a network.
 
     GRAPH.QUERY THE_NETWORK_GRAPH
     "MATCH (i:item)-[:SALE]->(n:network {name: 'emusk@tesla.com'})
-    RETURN i.title, i.description, i.asking_price, i.image_id" 
+    RETURN i.title, i.description, i.asking_price, i.image_id"
 
 ### Find All Listed Items in Any Network a User is a Member
 
@@ -158,7 +158,7 @@ The *My Offers* screen shows the properties of any **offer** edge connected to a
 
 // Show the image from redisinsight
 
-#### 
+####
 
 
 
@@ -168,15 +168,15 @@ The Network fills a gap in online, peer-to-peer transaction platforms between eB
 
 Users can create public or private networks specific to their business, industry, or area of interest. It could be as casual as friends trading pokemon cards or as formal as producers distributing their products to a network of retailers.
 
-The selling process is intentionally simple. A user lists an item for sale on a network with a recommended price and users in the network submit offers. The user that listed the item can accept any offer at any time. 
+The selling process is intentionally simple. A user lists an item for sale on a network with a recommended price and users in the network submit offers. The user that listed the item can accept any offer at any time.
 
 Saving the data in a graph allows for easy profiling of user to make recommendations about networks to join or items for sales. For example, since each item is tagged with descriptive labels, we can easily identify which items a user would like, based on the items they bought or made offers on.
 
 ## UX and DX
-The following table shows iPhone and Android screenshots for each page in the mobile application. 
+The following table shows iPhone and Android screenshots for each page in the mobile application.
 
 |Page |Screen |
---- | ---  
+--- | ---
 |Main Menu|![](./images/menu.png)|
 |All Networks|![](./images/networks.png)
 |My Networks|![](./images/my_networks.png)|
@@ -189,10 +189,10 @@ The following table shows iPhone and Android screenshots for each page in the mo
 
 - Must have [Node 14+](https://nodejs.org/en/download/)
 
-- Must have [Expo](https://docs.expo.io/) 
+- Must have [Expo](https://docs.expo.io/)
 
 After installing Node, install Expo:
-    
+
     npm i -g expo-cli
 
 ### Local Install
@@ -214,7 +214,7 @@ Run the mobile application using Expo in a local web browser. This application c
     npm i
 
 	expo start
-	
+
 After running `expo start`, you are presented with the following options:
 
 ![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/expo_start.png)
@@ -247,15 +247,15 @@ After accepting the EULA agreement, click the "I already have a database" button
 
 The following diagram illustrates the architecture.
 
-![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/architecture.png) 
+![](https://raw.githubusercontent.com/redis-developer/thenetwork/master/images/architecture.png)
 
 ## Technology Stack
 
-- [Redis](https://redis.io/) powers the persistence layer. Using the [RedisGraph](https://oss.redislabs.com/redisgraph/) available from [Redis Labs](https://redislabs.com/) and provides fast, sophisticated graph operations making data management and querying easy.
+- [Redis](https://redis.io/) powers the persistence layer. Using the [Redis Graph](https://oss.redislabs.com/redisgraph/) available from [Redis](https://redislabs.com/) and provides fast, sophisticated graph operations making data management and querying easy.
 
 - The back-end server is written in [Python](https://www.python.org/). Redis is accessed though the [redis-py module](https://docs.redislabs.com/latest/rs/references/client_references/client_python/). We also use the [redisgraph-py module](https://github.com/RedisGraph/redisgraph-py).
 
-- We use [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/) to visualize the system graph and run ad hoc queries. 
+- We use [RedisInsight](https://redislabs.com/redis-enterprise/redis-insight/) to visualize the system graph and run ad hoc queries.
 
 - All backend components are deployed to [Docker](https://www.docker.com/) containers. You can easily launch the entire back-end with a simple `docker compose up` command.
 
